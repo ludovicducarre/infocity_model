@@ -1,4 +1,6 @@
 business/Advert.class
 business/Town.class
 business/Advert$1.class
+business/User.class
 business/Advert$Builder.class
+business/User$Builder.class

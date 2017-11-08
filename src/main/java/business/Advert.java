@@ -24,6 +24,7 @@ public class Advert {
         this.date = builder.date;
         this.time = builder.time;
         this.type = builder.type;
+        this.location = builder.location;
     }
 
     public int getId() {
