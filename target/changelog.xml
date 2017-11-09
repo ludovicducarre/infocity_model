@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog>
+  
+<changeset datePattern="yyyyMMdd HH:mm:ss z" start="20171010 16:33:44 CEST" end="20171110 15:33:44 CET">
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-09</date>
+		<time pattern="HH:mm:ss">15:12:32</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>modified</action>
+			<name>src/main/java/business/User.java</name>
+			<revision>3e67dec5741c50339a33833ad188bee0a3803301</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>3e67dec5741c50339a33833ad188bee0a3803301</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>3e67dec5741c50339a33833ad188bee0a3803301</revision>
+		</file>
+		<msg><![CDATA[ajoute des elements à la javadoc sur la classe User]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-08</date>
+		<time pattern="HH:mm:ss">15:21:49</time>
+		<author><![CDATA[tbezenger <tomy-bezenger@etud.univ-tln.fr>]]></author>
+		<file>
+			<action>deleted</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</name>
+			<revision>815c568c40e5e4d176e485893d789600e7d0892a</revision>
+		</file>
+		<msg><![CDATA[Delete inputFiles.lst]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-08</date>
+		<time pattern="HH:mm:ss">15:21:32</time>
+		<author><![CDATA[tbezenger <tomy-bezenger@etud.univ-tln.fr>]]></author>
+		<file>
+			<action>deleted</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</name>
+			<revision>8a07322446f941f9d3cd1a457f89ebceabf77289</revision>
+		</file>
+		<msg><![CDATA[Delete createdFiles.lst]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-08</date>
+		<time pattern="HH:mm:ss">15:20:28</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>modified</action>
+			<name>.gitignore</name>
+			<revision>a6430b2e9acb3ae5e9a8645a34e0120cf891a780</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>a6430b2e9acb3ae5e9a8645a34e0120cf891a780</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>a6430b2e9acb3ae5e9a8645a34e0120cf891a780</revision>
+		</file>
+		<msg><![CDATA[suppresion de fichier de suivi genere par idea]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-08</date>
+		<time pattern="HH:mm:ss">15:18:28</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>modified</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</name>
+			<revision>c7319ddf050320ffa74f4676fc8b9caef381746a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</name>
+			<revision>c7319ddf050320ffa74f4676fc8b9caef381746a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>c7319ddf050320ffa74f4676fc8b9caef381746a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>c7319ddf050320ffa74f4676fc8b9caef381746a</revision>
+		</file>
+		<msg><![CDATA[suppresion de fichier de suivi genere par idea]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-08</date>
+		<time pattern="HH:mm:ss">15:15:02</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>modified</action>
+			<name>src/main/java/business/Advert.java</name>
+			<revision>1a194f448099476c4cb99b2ef70405840ff4180a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/main/java/business/User.java</name>
+			<revision>1a194f448099476c4cb99b2ef70405840ff4180a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</name>
+			<revision>1a194f448099476c4cb99b2ef70405840ff4180a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>1a194f448099476c4cb99b2ef70405840ff4180a</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>1a194f448099476c4cb99b2ef70405840ff4180a</revision>
+		</file>
+		<msg><![CDATA[ajoute la classe User]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-02</date>
+		<time pattern="HH:mm:ss">11:04:00</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>modified</action>
+			<name>pom.xml</name>
+			<revision>f11fddbb82fa5a226482fdfa5eff9f71a26a6924</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>src/main/java/business/Advert.java</name>
+			<revision>f11fddbb82fa5a226482fdfa5eff9f71a26a6924</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</name>
+			<revision>f11fddbb82fa5a226482fdfa5eff9f71a26a6924</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>f11fddbb82fa5a226482fdfa5eff9f71a26a6924</revision>
+		</file>
+		<file>
+			<action>modified</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>f11fddbb82fa5a226482fdfa5eff9f71a26a6924</revision>
+		</file>
+		<msg><![CDATA[ajoute dependance jgitflow]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2017-11-02</date>
+		<time pattern="HH:mm:ss">10:23:03</time>
+		<author><![CDATA[ludovicducarre <ludovic-ducarre@etud.univtln.fr>]]></author>
+		<file>
+			<action>added</action>
+			<name>.gitignore</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.idea/.name</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.idea/compiler.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.idea/encodings.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.idea/vcs.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.travis.scripts/mvn.sh</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.travis.settings.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>.travis.yml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>generateur_archetype_bruno.txt</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>pom.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/main/java/business/Advert.java</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/main/java/business/Town.java</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/site/fr/markdown/usage.md.vm</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/site/markdown/readme.md.vm</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/site/markdown/usage.md.vm</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/site/site.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>src/test/java/AppTest.java</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/maven-archiver/pom.properties</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/surefire-reports/TEST-fr.univtln.lducarre365.infoCity.AppTest.xml</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>target/surefire-reports/fr.univtln.lducarre365.infoCity.AppTest.txt</name>
+			<revision>c566d75e5157e8369f2164c3b91ba2d69e75325a</revision>
+		</file>
+		<msg><![CDATA[crée classes Advert et City]]></msg>
+	</changelog-entry>
+</changeset>
+
+</changelog>
