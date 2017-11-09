@@ -1,5 +1,15 @@
 package business;
 
+/**
+ * @author Ludovic 
+ * @author Tomy
+ * Cette classe créé un utilisateur. Ici, un utilisateur est un client
+ * qui gère la communication de sa ville
+ */
+
+// TODO: 09/11/17 ajouter la surcouche jpa pour la persistance
+// TODO: 09/11/17 ajouter un mot de passe à un user 
+
 public class User {
     private int id;
     private String firstName;
