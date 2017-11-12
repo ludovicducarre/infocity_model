@@ -1,5 +1,7 @@
 package business;
 
+import javax.persistence.*;
+
 /**
  * @author Ludovic 
  * @author Tomy
@@ -9,18 +11,22 @@ package business;
 
 // TODO: 09/11/17 ajouter la surcouche jpa pour la persistance
 // TODO: 09/11/17 ajouter un mot de passe à un user 
-
+@Entity
+@Table(name = "user")
 public class User {
-    private int id;
+    @Id
+    @GeneratedValue
+    private long id;
     private String firstName;
     private String lastName;
     private String email;
+    @ManyToOne(cascade = CascadeType.ALL)
     private Town town;
 
     public User(Builder builder) {
     }
 
-    public User(int id, String firstName, String lastName, String email, Town town) {
+    public User(long id, String firstName, String lastName, String email, Town town) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -28,7 +34,7 @@ public class User {
         this.town = town;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -50,9 +56,13 @@ public class User {
         return town;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public static class Builder{
-        private int id;
+        private long id;
         private String firstName;
         private String lastName;
         private String email;
@@ -67,7 +77,7 @@ public class User {
             return new User(this);
 
         }
-        public Builder setId(int id) {
+        public Builder setId(long id) {
             this.id = id;
             return this;
         }
