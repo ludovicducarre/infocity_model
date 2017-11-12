@@ -37,9 +37,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>bintray-dptinfoutln-public</id>
+                    <id>bintray-ludovicducarre-infocity_model</id>
                     <name>bintray</name>
-                    <url>https://dl.bintray.com/dptinfoutln/public</url>
+                    <url>https://dl.bintray.com/ludovicducarre/infocity_model</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -47,7 +47,7 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>bintray-infocity_model</id>
+                    <id>bintray-ludovicducarre-infocity_model</id>
                     <name>bintray-plugins</name>
                     <url>https://dl.bintray.com/ludovicducarre/infocity_model</url>
                 </pluginRepository>
