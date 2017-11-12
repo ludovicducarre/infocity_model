@@ -9,8 +9,8 @@ import javax.persistence.*;
  * qui gère la communication de sa ville
  */
 
-// TODO: 09/11/17 ajouter la surcouche jpa pour la persistance
-// TODO: 09/11/17 ajouter un mot de passe à un user 
+//TODO vérifier la bonne forme d'un nom, mail ect..
+
 @Entity
 @Table(name = "user")
 public class User {
@@ -22,16 +22,19 @@ public class User {
     private String email;
     @ManyToOne(cascade = CascadeType.ALL)
     private Town town;
+    //TODO le password ne doit pas être une String
+    private String password;
 
     public User(Builder builder) {
     }
 
-    public User(long id, String firstName, String lastName, String email, Town town) {
+    public User(long id, String firstName, String lastName, String email, Town town, String password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.town = town;
+        this.password = password;
     }
 
     public long getId() {
@@ -67,6 +70,7 @@ public class User {
         private String lastName;
         private String email;
         private Town town;
+        private String password;
 
         public User build(){
             this.setId(id);
@@ -74,6 +78,7 @@ public class User {
             this.setLastName(lastName);
             this.setEmail(email);
             this.setTown(town);
+            this.setPassword(password);
             return new User(this);
 
         }
@@ -98,6 +103,11 @@ public class User {
 
         public Builder setTown(Town town){
             this.town = town;
+            return this;
+        }
+
+        public Builder setPassword(String password){
+            this.password = password;
             return this;
         }
 
