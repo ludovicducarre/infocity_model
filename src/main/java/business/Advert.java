@@ -1,13 +1,27 @@
 package business;
 
-import java.util.Calendar;
+import javax.persistence.*;
+import java.util.Date;
 
+/**
+ * @author ludovic & tomy
+ * Cette classe est le coeur du projet
+ * Basiquement, c'est un simple message qui est destiné aux clients.
+ * Il a différentes caractéristiques qui permettent de classifier
+ * les messages entre eux. La recherche par type est la principale
+ * source de classification.
+ */
+
+@Entity
+@Table(name = "advert")
 public class Advert {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String title;
     private String message;
-    private Calendar date;
-    private Calendar time;
+    private Date date;
+    private Date time;
     private String location;
     private String type;
     private Town town;
@@ -27,7 +41,7 @@ public class Advert {
         this.location = builder.location;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -39,11 +53,11 @@ public class Advert {
         return message;
     }
 
-    public Calendar getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public Calendar getTime() {
+    public Date getTime() {
         return time;
     }
 
@@ -72,11 +86,11 @@ public class Advert {
     }
 
     public static class Builder {
-        private int id;
+        private long id;
         private String title;
         private String message;
-        private Calendar date;
-        private Calendar time;
+        private Date date;
+        private Date time;
         private String location;
         private String type;
         private Town town;
@@ -94,7 +108,7 @@ public class Advert {
             return new Advert(this);
         }
 
-        public Builder setId(int id) {
+        public Builder setId(long id) {
             this.id = id;
             return this;
         }
@@ -119,12 +133,12 @@ public class Advert {
             return this;
         }
 
-        public Builder setDate(Calendar date) {
+        public Builder setDate(Date date) {
             this.date = date;
             return this;
         }
 
-        public Builder setTime(Calendar time) {
+        public Builder setTime(Date time) {
             this.time = time;
             return this;
         }
