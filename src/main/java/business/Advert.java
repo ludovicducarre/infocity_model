@@ -24,6 +24,7 @@ public class Advert {
     private Date time;
     private String location;
     private String type;
+    @ManyToOne(cascade = CascadeType.ALL)
     private Town town;
 
 
