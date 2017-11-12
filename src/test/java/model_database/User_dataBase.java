@@ -8,6 +8,5 @@ public class User_dataBase {
                 .setEmail("paul.martin@mail.com").build();
 
         user.toString();
-        user.toString();
     }
 }
