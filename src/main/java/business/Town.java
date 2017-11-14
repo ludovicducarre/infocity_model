@@ -24,6 +24,8 @@ public class Town {
     @OneToMany(cascade = CascadeType.ALL)
     private LinkedList<Advert> adverts;
 
+    public Town(){}
+
     public long getId() {
         return id;
     }

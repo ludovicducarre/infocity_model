@@ -20,7 +20,9 @@ public class Advert {
     private long id;
     private String title;
     private String message;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date date;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date time;
     private String location;
     private String type;
