@@ -61,7 +61,14 @@ public class User {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", town=" + town +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     public static class Builder{
@@ -110,6 +117,6 @@ public class User {
             this.password = password;
             return this;
         }
-
+        
     }
 }
