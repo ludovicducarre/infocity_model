@@ -25,6 +25,8 @@ public class User {
     //TODO le password ne doit pas être une String
     private String password;
 
+    public User(){}
+
     public User(Builder builder) {
     }
 
@@ -117,6 +119,6 @@ public class User {
             this.password = password;
             return this;
         }
-        
+
     }
 }
