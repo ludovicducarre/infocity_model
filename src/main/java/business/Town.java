@@ -1,6 +1,7 @@
 package business;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -12,19 +13,24 @@ import java.util.LinkedList;
  */
 
 @Entity
-@Table(name = "town")
+@Table(name = "TOWN")
 public class Town {
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
     private String country;
     private String state;
-    @OneToMany(cascade = CascadeType.ALL)
+    //@OneToMany(mappedBy="users")
+    @Transient
     private ArrayList<User> users;
-    @OneToMany(cascade = CascadeType.ALL)
-    private LinkedList<Advert> adverts;
+    @Transient
+    //@OneToMany(mappedBy = "adverts")
+    private ArrayList<Advert> adverts;
 
     public Town(){}
+
+    private Town(long id){this.id = id;}
 
     public long getId() {
         return id;
@@ -70,7 +76,7 @@ public class Town {
         this.users = users;
     }
 
-    public void setAdverts(LinkedList<Advert> adverts) {
+    public void setAdverts(ArrayList<Advert> adverts) {
         this.adverts = adverts;
     }
 
@@ -78,7 +84,7 @@ public class Town {
         return users;
     }
 
-    public LinkedList<Advert> getAdverts() {
+    public ArrayList<Advert> getAdverts() {
         return adverts;
     }
 

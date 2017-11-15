@@ -1,6 +1,7 @@
 package business;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -13,8 +14,8 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "advert")
-public class Advert {
+@Table(name = "ADVERT")
+public class Advert{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -26,15 +27,19 @@ public class Advert {
     private Date time;
     private String location;
     private String type;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Town town;
 
 
     private Advert() {
     }
 
+    private Advert(long id){
+        this.id = id;
+    }
+
     private Advert(Builder builder) {
-        this.id = builder.id;
+        this(builder.id);
         this.title = builder.title;
         this.message = builder.message;
         this.town = builder.town;

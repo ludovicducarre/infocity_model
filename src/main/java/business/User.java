@@ -1,6 +1,7 @@
 package business;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @author Ludovic 
@@ -12,7 +13,7 @@ import javax.persistence.*;
 //TODO vérifier la bonne forme d'un nom, mail ect..
 
 @Entity
-@Table(name = "user")
+@Table(name = "TOWN")
 public class User {
     @Id
     @GeneratedValue
@@ -20,7 +21,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Town town;
     //TODO le password ne doit pas être une String
     private String password;
