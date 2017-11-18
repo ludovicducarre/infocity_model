@@ -13,7 +13,7 @@ import java.io.Serializable;
 //TODO vérifier la bonne forme d'un nom, mail ect..
 
 @Entity
-@Table(name = "TOWN")
+@Table(name = "USATEUR")
 public class User {
     @Id
     @GeneratedValue
@@ -21,8 +21,6 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    @ManyToOne
-    private Town town;
     //TODO le password ne doit pas être une String
     private String password;
 
@@ -31,12 +29,11 @@ public class User {
     public User(Builder builder) {
     }
 
-    public User(long id, String firstName, String lastName, String email, Town town, String password) {
+    public User(long id, String firstName, String lastName, String email, String password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.town = town;
         this.password = password;
     }
 
@@ -58,9 +55,7 @@ public class User {
     }
 
 
-    public Town getTown() {
-        return town;
-    }
+
 
     @Override
     public String toString() {
@@ -69,7 +64,6 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", town=" + town +
                 ", password='" + password + '\'' +
                 '}';
     }
@@ -79,7 +73,7 @@ public class User {
         private String firstName;
         private String lastName;
         private String email;
-        private Town town;
+
         private String password;
 
         public User build(){
@@ -87,7 +81,7 @@ public class User {
             this.setFirstName(firstName);
             this.setLastName(lastName);
             this.setEmail(email);
-            this.setTown(town);
+
             this.setPassword(password);
             return new User(this);
 
@@ -102,7 +96,7 @@ public class User {
             return this;
         }
         public Builder setLastName(String lastName){
-            this.firstName = lastName;
+            this.lastName = lastName;
             return this;
         }
 
@@ -111,10 +105,7 @@ public class User {
             return this;
         }
 
-        public Builder setTown(Town town){
-            this.town = town;
-            return this;
-        }
+
 
         public Builder setPassword(String password){
             this.password = password;

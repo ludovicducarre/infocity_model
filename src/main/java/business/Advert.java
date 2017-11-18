@@ -27,8 +27,7 @@ public class Advert{
     private Date time;
     private String location;
     private String type;
-    @ManyToOne
-    private Town town;
+
 
 
     private Advert() {
@@ -42,7 +41,7 @@ public class Advert{
         this(builder.id);
         this.title = builder.title;
         this.message = builder.message;
-        this.town = builder.town;
+
         this.date = builder.date;
         this.time = builder.time;
         this.type = builder.type;
@@ -77,16 +76,15 @@ public class Advert{
         return type;
     }
 
-    public Town getTown() {
-        return town;
-    }
+
+
+
 
     @Override
     public String toString() {
         return "Advert{" +
                 "id=" + id +
                 ", message='" + message + '\'' +
-                ", town=" + town +
                 ", type=" + type +
                 ", date=" + date +
                 ", time=" + time +
@@ -101,13 +99,12 @@ public class Advert{
         private Date time;
         private String location;
         private String type;
-        private Town town;
+
 
 
         public Advert build() {
             this.setId(id);
             this.setMessage(message);
-            this.setTown(town);
             this.setTime(time);
             this.setDate(date);
             this.setTitle(title);
@@ -131,10 +128,6 @@ public class Advert{
             return this;
         }
 
-        public Builder setTown(Town town) {
-            this.town = town;
-            return this;
-        }
 
         public Builder setType(String type) {
             this.type = type;

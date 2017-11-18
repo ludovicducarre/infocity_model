@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author ludovic & tomy
@@ -23,10 +24,10 @@ public class Town {
     private String state;
     //@OneToMany(mappedBy="users")
     @Transient
-    private ArrayList<User> users;
+    private List<User> users = new ArrayList<User>();
     @Transient
     //@OneToMany(mappedBy = "adverts")
-    private ArrayList<Advert> adverts;
+    private List<Advert> adverts = new ArrayList<Advert>();
 
     public Town(){}
 
@@ -80,11 +81,11 @@ public class Town {
         this.adverts = adverts;
     }
 
-    public ArrayList<User> getUsers() {
+    public List<User> getUsers() {
         return users;
     }
 
-    public ArrayList<Advert> getAdverts() {
+    public List<Advert> getAdverts() {
         return adverts;
     }
 
@@ -95,7 +96,8 @@ public class Town {
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 ", state='" + state + '\'' +
+                ", users=" + users +
+                ", adverts=" + adverts +
                 '}';
     }
-
 }
