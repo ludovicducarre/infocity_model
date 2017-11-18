@@ -22,11 +22,9 @@ public class Town {
     private String name;
     private String country;
     private String state;
-    //@OneToMany(mappedBy="users")
-    @Transient
+    @OneToMany(cascade = CascadeType.ALL)
     private List<User> users = new ArrayList<User>();
-    @Transient
-    //@OneToMany(mappedBy = "adverts")
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Advert> adverts = new ArrayList<Advert>();
 
     public Town(){}

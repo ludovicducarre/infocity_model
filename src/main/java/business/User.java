@@ -27,6 +27,11 @@ public class User {
     public User(){}
 
     public User(Builder builder) {
+        this.id = builder.id;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.email = builder.email;
+        this.password = builder.password;
     }
 
     public User(long id, String firstName, String lastName, String email, String password) {
