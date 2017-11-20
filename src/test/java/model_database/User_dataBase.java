@@ -1,6 +1,6 @@
 package model_database;
 
-import business.User;
+import fr.univtln.lducarre365.infoCity.business.User;
 
 public class User_dataBase {
     public static void main(String[] args) {

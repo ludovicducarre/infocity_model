@@ -1,6 +1,7 @@
-package business;
+package fr.univtln.lducarre365.infoCity.business;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "ADVERT")
-public class Advert{
+public class Advert implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -36,7 +37,7 @@ public class Advert{
         this.id = id;
     }
 
-    private Advert(Builder builder) {
+    /*private Advert(Builder builder) {
         this(builder.id);
         this.title = builder.title;
         this.message = builder.message;
@@ -45,7 +46,7 @@ public class Advert{
         this.time = builder.time;
         this.type = builder.type;
         this.location = builder.location;
-    }
+    }*/
 
     public long getId() {
         return id;
@@ -75,21 +76,52 @@ public class Advert{
         return type;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     @Override
     public String toString() {
         return "Advert{" +
                 "id=" + id +
+                ", title='" + title + '\'' +
                 ", message='" + message + '\'' +
-                ", type=" + type +
                 ", date=" + date +
                 ", time=" + time +
+                ", location='" + location + '\'' +
+                ", type='" + type + '\'' +
                 '}';
     }
 
+
+
+
+
+    /*
     public static class Builder {
         private long id;
         private String title;
@@ -149,5 +181,5 @@ public class Advert{
         }
     }
 
-
+*/
 }

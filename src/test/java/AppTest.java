@@ -1,7 +1,7 @@
 package fr.univtln.lducarre365.infoCity;
 
-import business.Town;
-import business.User;
+import fr.univtln.lducarre365.infoCity.business.Town;
+import fr.univtln.lducarre365.infoCity.business.User;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.fail;
