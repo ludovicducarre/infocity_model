@@ -113,7 +113,6 @@ public class Advert implements Serializable{
 
     public void setTown(Town town) {
         this.town = town;
-
     }
 
     @Override
