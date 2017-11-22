@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author ludovic & tomy
+ * @author ludovic et tomy
  * Une ville (town) a un nom, une région et un pays.
  * Elle possede des messages (adverts). Ce sont ces messages
  * qui sont communiqués aux clients

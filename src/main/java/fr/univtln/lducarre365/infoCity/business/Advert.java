@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author ludovic & tomy
+ * @author ludovic et tomy
  * Cette classe est le coeur du projet
  * Basiquement, c'est un simple message qui est destiné aux clients.
  * Il a différentes caractéristiques qui permettent de classifier
