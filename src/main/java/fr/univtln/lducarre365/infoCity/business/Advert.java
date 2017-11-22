@@ -32,14 +32,14 @@ public class Advert implements Serializable{
 
 
 
-    private Advert() {
+    public Advert() {
     }
 
-    private Advert(long id){
+    public Advert(long id){
         this.id = id;
     }
 
-    /*private Advert(Builder builder) {
+    private Advert(Builder builder) {
         this(builder.id);
         this.title = builder.title;
         this.message = builder.message;
@@ -48,7 +48,7 @@ public class Advert implements Serializable{
         this.time = builder.time;
         this.type = builder.type;
         this.location = builder.location;
-    }*/
+    }
 
     public long getId() {
         return id;
@@ -131,7 +131,7 @@ public class Advert implements Serializable{
 
 
 
-    /*
+
     public static class Builder {
         private long id;
         private String title;
@@ -191,5 +191,5 @@ public class Advert implements Serializable{
         }
     }
 
-*/
+
 }
