@@ -13,7 +13,6 @@ import java.util.Date;
  * source de classification.
  */
 
-
 @Entity
 @Table(name = "ADVERT")
 public class Advert implements Serializable{
