@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author ludovic & tomy
+ * @author ludovic et tomy
  * Une ville (town) a un nom, une région et un pays.
  * Elle possede des messages (adverts). Ce sont ces messages
  * qui sont communiqués aux clients
@@ -22,8 +22,8 @@ public class Town {
     private String state;
     @OneToMany(cascade = CascadeType.ALL)
     private List<User> users = new ArrayList<User>();
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Advert> adverts = new ArrayList<Advert>();
+    //@OneToMany(cascade = CascadeType.ALL)
+    //private List<Advert> adverts = new ArrayList<Advert>();
 
     public Town(){}
 
@@ -65,25 +65,25 @@ public class Town {
         this.users.add(user);
     }
 
-    public void addAdvert(Advert advert) {
-        this.adverts.add(advert);
-    }
+//    public void addAdvert(Advert advert) {
+//        this.adverts.add(advert);
+//    }
 
     public void setUsers(ArrayList<User> users) {
         this.users = users;
     }
 
-    public void setAdverts(ArrayList<Advert> adverts) {
-        this.adverts = adverts;
-    }
+//    public void setAdverts(ArrayList<Advert> adverts) {
+//        this.adverts = adverts;
+//    }
 
     public List<User> getUsers() {
         return users;
     }
 
-    public List<Advert> getAdverts() {
-        return adverts;
-    }
+//    public List<Advert> getAdverts() {
+//        return adverts;
+//    }
 
     @Override
     public String toString() {
@@ -93,7 +93,6 @@ public class Town {
                 ", country='" + country + '\'' +
                 ", state='" + state + '\'' +
                 ", users=" + users +
-                ", adverts=" + adverts +
                 '}';
     }
 }
