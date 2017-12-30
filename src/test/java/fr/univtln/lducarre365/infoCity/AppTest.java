@@ -17,6 +17,8 @@ public class AppTest {
 
     @BeforeEach
     void init() {
+        User user = new User.Builder().setEmail("monmail@mail.com").setFirstName("Jean")
+                .setLastName("Strauss").setId(952).setPassword("azerty").build();
     }
 
     @Test
@@ -44,16 +46,5 @@ public class AppTest {
     static void tearDownAll() {
     }
 
-    /*public static void main(String[] args) {
-        Town town = new Town();
-        town.setName("toulon");
-        town.setCountry("france");
 
-        User user = new User(456,"paul","martin","paulmartin@mail.fr","pass");
-
-
-
-        System.out.println(user.toString());
-    }
-*/
 }
