@@ -13,6 +13,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "TOWN")
+@NamedQueries({@NamedQuery(name = "Town.findAll", query = "select town from Town town")})
 public class Town {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
