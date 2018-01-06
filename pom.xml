@@ -62,11 +62,7 @@
     <!-- ADAPTER les coordonnées -->
     <groupId>fr.univtln.lducarre365.infoCity</groupId>
     <artifactId>infoCity_model</artifactId>
-<<<<<<< HEAD
-    <version>1.0</version>
-=======
     <version>1.2</version>
->>>>>>> refs/heads/release-1.2
     <packaging>jar</packaging>
     <!-- ADAPTER les coordonnées -->
 
@@ -154,17 +150,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.1-api</artifactId>
-            <version>1.0.0.Final</version>
-        </dependency>
-=======
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>eclipselink</artifactId>
             <version>2.5.1</version>
         </dependency>
-
->>>>>>> refs/heads/release-1.2
     </dependencies>
 </project>
