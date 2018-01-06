@@ -164,6 +164,4 @@ public class Advert implements Serializable{
             return this;
         }
     }
-
-
 }

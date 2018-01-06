@@ -114,4 +114,20 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/java,macos,intellij+iml
 
+<<<<<<< HEAD
 target/*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+target/*
+=======
+target/*
+>>>>>>> refs/heads/release-1.2
+=======
+target/*
+>>>>>>> refs/heads/release-1.2
+=======
+target/*
+>>>>>>> refs/heads/release-1.2
+>>>>>>> master

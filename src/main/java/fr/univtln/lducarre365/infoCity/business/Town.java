@@ -82,8 +82,6 @@ public class Town {
         return users;
     }
 
-
-
 //    public List<Advert> getAdverts() {
 //        return adverts;
 //    }
