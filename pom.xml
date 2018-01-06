@@ -63,6 +63,7 @@
     <groupId>fr.univtln.lducarre365.infoCity</groupId>
     <artifactId>infoCity_model</artifactId>
     <version>1.2</version>
+
     <packaging>jar</packaging>
     <!-- ADAPTER les coordonnées -->
 
@@ -154,5 +155,6 @@
             <artifactId>eclipselink</artifactId>
             <version>2.5.1</version>
         </dependency>
+
     </dependencies>
 </project>
