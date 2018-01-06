@@ -1,6 +1,8 @@
 package fr.univtln.lducarre365.infoCity.business;
 
+
 import javax.persistence.*;
+
 
 /**
  * @author Ludovic 

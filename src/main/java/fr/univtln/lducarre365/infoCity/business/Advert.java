@@ -9,11 +9,9 @@ import java.util.Date;
  * Cette classe est le coeur du projet
  * Basiquement, c'est un simple message qui est destiné aux clients.
  * Il a différentes caractéristiques qui permettent de classifier
- * les messages entre eux. La recherche par type est la principale
+ * les messages entre eux. La recherche par type et par ville est la principale
  * source de classification.
  */
-
-
 
 @Entity
 @Table(name = "ADVERT")
