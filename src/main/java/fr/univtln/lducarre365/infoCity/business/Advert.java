@@ -13,6 +13,8 @@ import java.util.Date;
  * source de classification.
  */
 
+
+
 @Entity
 @Table(name = "ADVERT")
 public class Advert implements Serializable{
@@ -21,10 +23,8 @@ public class Advert implements Serializable{
     private long id;
     private String title;
     private String message;
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date date;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date time;
     private String location;
     private String type;
     @ManyToOne(cascade = CascadeType.ALL)
@@ -32,23 +32,21 @@ public class Advert implements Serializable{
 
 
 
-    private Advert() {
+    public Advert() {
     }
 
-    private Advert(long id){
+    public Advert(long id){
         this.id = id;
     }
 
-    /*private Advert(Builder builder) {
-        this(builder.id);
+    private Advert(Builder builder) {
+        this.id = builder.id;
         this.title = builder.title;
         this.message = builder.message;
-
         this.date = builder.date;
-        this.time = builder.time;
         this.type = builder.type;
         this.location = builder.location;
-    }*/
+    }
 
     public long getId() {
         return id;
@@ -64,10 +62,6 @@ public class Advert implements Serializable{
 
     public Date getDate() {
         return date;
-    }
-
-    public Date getTime() {
-        return time;
     }
 
     public String getLocation() {
@@ -94,10 +88,6 @@ public class Advert implements Serializable{
         this.date = date;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
-    }
-
     public void setLocation(String location) {
         this.location = location;
     }
@@ -116,28 +106,20 @@ public class Advert implements Serializable{
 
     @Override
     public String toString() {
-        return "Advert{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", message='" + message + '\'' +
-                ", date=" + date +
-                ", time=" + time +
-                ", location='" + location + '\'' +
-                ", type='" + type + '\'' +
-                '}';
+
+        return title+
+                "\nle "+date+
+                "\n"+location+
+                "\n"+message;
     }
 
 
 
-
-
-    /*
     public static class Builder {
         private long id;
         private String title;
         private String message;
         private Date date;
-        private Date time;
         private String location;
         private String type;
 
@@ -146,7 +128,6 @@ public class Advert implements Serializable{
         public Advert build() {
             this.setId(id);
             this.setMessage(message);
-            this.setTime(time);
             this.setDate(date);
             this.setTitle(title);
             this.setLocation(location);
@@ -180,16 +161,9 @@ public class Advert implements Serializable{
             return this;
         }
 
-        public Builder setTime(Date time) {
-            this.time = time;
-            return this;
-        }
-
         public Builder setLocation(String location) {
             this.location = location;
             return this;
         }
     }
-
-*/
 }

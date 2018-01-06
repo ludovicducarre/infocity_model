@@ -13,7 +13,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "TOWN")
-@NamedQueries({@NamedQuery(name = "Town.findAll", query = "select town from Town town")})
 public class Town {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,6 +20,7 @@ public class Town {
     private String name;
     private String country;
     private String state;
+
     @OneToMany(cascade = CascadeType.ALL)
     private List<User> users = new ArrayList<User>();
     //@OneToMany(cascade = CascadeType.ALL)
@@ -81,6 +81,7 @@ public class Town {
     public List<User> getUsers() {
         return users;
     }
+
 
 //    public List<Advert> getAdverts() {
 //        return adverts;
