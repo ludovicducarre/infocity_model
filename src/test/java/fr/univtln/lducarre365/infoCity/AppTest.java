@@ -15,11 +15,11 @@ public class AppTest {
     static void initAll() {
     }
 
-    @BeforeEach
+    /*@BeforeEach
     void init() {
         User user = new User.Builder().setEmail("monmail@mail.com").setFirstName("Jean")
                 .setLastName("Strauss").setId(952).setPassword("azerty").build();
-    }
+    }*/
 
     @Test
     void succeedingTest() {

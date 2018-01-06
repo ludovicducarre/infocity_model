@@ -1,6 +1,5 @@
 package fr.univtln.lducarre365.infoCity.business;
 
-import javax.json.JsonObject;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,10 +21,6 @@ public class Town {
     private String country;
     private String state;
 
-    //@Convert(converter = JsonConverter.class)
-    @Column(nullable = true, columnDefinition = "json")
-   // @Expose
-    private JsonObject jsonProperty;
     @OneToMany(cascade = CascadeType.ALL)
     private List<User> users = new ArrayList<User>();
     //@OneToMany(cascade = CascadeType.ALL)
@@ -85,14 +80,6 @@ public class Town {
 
     public List<User> getUsers() {
         return users;
-    }
-
-    public JsonObject getJsonProperty() {
-        return jsonProperty;
-    }
-
-    public void setJsonProperty(JsonObject jsonProperty) {
-        this.jsonProperty = jsonProperty;
     }
 
 

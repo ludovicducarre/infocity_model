@@ -2,9 +2,7 @@ package fr.univtln.lducarre365.infoCity.business;
 
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+
 
 /**
  * @author Ludovic 
@@ -21,11 +19,8 @@ public class User {
     @Id
     @GeneratedValue
     private long id;
-    @NotNull
     private String firstName;
-    @NotNull
     private String lastName;
-    @Email
     private String email;
     //TODO le password ne doit pas être une String
     private String password;
